@@ -1,34 +1,24 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg" />
-  <img src="assets/hero.svg" width="100%" alt="HEJ — Hej or Saelin。低脂國奻｜惡俗醜貨｜疑似鍵政｜破壞分子｜痛苦大學生｜高齡人士｜🇹🇼🇭🇰🇨🇳｜詭異行蹤｜學術失敗者｜健全逼｜落魄合約交易員｜落魄開發者｜經濟困難" />
+  <source media="(max-width: 600px)" srcset="assets/dashboard/hero-mobile.svg" />
+  <img src="assets/dashboard/hero.svg" width="100%" alt="HEJ — hej or Saelin。低脂國奻｜惡俗醜貨｜疑似鍵政｜破壞分子｜痛苦大學生｜高齡人士｜🇹🇼🇭🇰🇨🇳｜詭異行蹤｜學術失敗者｜健全逼｜落魄合約交易員｜落魄開發者｜經濟困難" />
 </picture>
 
-### Latest project
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/dashboard/overview-mobile.svg" />
+  <img src="assets/dashboard/overview.svg" width="100%" alt="奶龍大學、Hej’s Pets 與本週編碼時間" />
+</picture>
 
-<table>
-<tr>
-<td width="110" align="center" valign="middle">
-<a href="https://github.com/liyouran0820/nailong-university-domains"><img src="assets/nailong-duo.png" width="100" alt="黃色綠眼睛雙奶龍騎乘，無校徽、無打碼" /></a>
-</td>
-<td valign="middle">
-<strong><a href="https://github.com/liyouran0820/nailong-university-domains">奶龍大學 · 高校域名合集</a></strong><br />
-致力於建設全球最大的奶龍學術平台，匯聚海內外頂尖奶龍高校。<br />
-立足奶龍，面向世界。為「誰才是奶龍」提供一站式研究入口。<br />
-<sub>高校域名導航 · 奶龍／奶蛙／奶蛋 · PRs Welcome</sub>
-</td>
-</tr>
-<tr>
-<td width="110" align="center">
-<a href="https://github.com/Hej28/Hejs-Pets"><img src="assets/pet-logo.png" width="88" alt="Hej’s Pets 吐舌貓圖標" /></a>
-</td>
-<td>
-<strong><a href="https://github.com/Hej28/Hejs-Pets">Hej’s Pets</a></strong><br />
-把照片變成在 Mac 的 Dock 和螢幕邊緣爬行的小寵物。<br />
-拖拽、跳躍、表情和自訂氣泡；照片與寵物資料留在本機。<br />
-<sub>Swift · AppKit · Core Image · Vision</sub>
-</td>
-</tr>
-</table>
+[奶龍大學 · 高校域名合集](https://github.com/liyouran0820/nailong-university-domains) · [Hej’s Pets](https://github.com/Hej28/Hejs-Pets)
+
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/dashboard/stats-mobile.svg" />
+  <img src="assets/dashboard/stats.svg" width="100%" alt="GitHub 公開貢獻、評級與代碼語言占比" />
+</picture>
+
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/dashboard/activity-mobile.svg" />
+  <img src="assets/dashboard/activity.svg" width="100%" alt="最近 31 天 GitHub 貢獻活動" />
+</picture>
 
 ### Languages &amp; Tools
 
@@ -64,3 +54,5 @@ AI 開發馬拉松的團隊專案。以雙世界切換與空間映射為核心�
 </td>
 </tr>
 </table>
+
+<sub>統計每 6 小時自動更新。GitHub 評級採用 github-readme-stats 的貢獻算法；語言占比反映公開自有倉庫的代碼量。編碼時間需連接 WakaTime，從啟用後開始記錄。</sub>
