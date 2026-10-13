@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180" role="img" aria-label="whoami: hej or Saelin">
+  <rect x="1" y="1" width="1198" height="178" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="27" cy="26" r="6" fill="#ff5f57"/><circle cx="49" cy="26" r="6" fill="#febc2e"/><circle cx="71" cy="26" r="6" fill="#28c840"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="25">
+    <text x="26" y="82" fill="#7ee787">$ whoami</text>
+    <text x="26" y="124" fill="#e6edf3">hej <tspan fill="#8b949e">or</tspan> Saelin</text>
+    <text x="26" y="162" fill="#7ee787">$ cat bio.txt</text>
+  </g>
+</svg>
