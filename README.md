@@ -7,6 +7,17 @@
 
 <table>
 <tr>
+<td width="110" align="center" valign="middle">
+<a href="https://github.com/liyouran0820/nailong-university-domains"><img src="assets/nailong-duo.png" width="100" alt="黃色綠眼睛雙奶龍騎乘，無校徽、無打碼" /></a>
+</td>
+<td valign="middle">
+<strong><a href="https://github.com/liyouran0820/nailong-university-domains">奶龍大學 · 高校域名合集</a></strong><br />
+致力於建設全球最大的奶龍學術平台，匯聚海內外頂尖奶龍高校。<br />
+立足奶龍，面向世界。為「誰才是奶龍」提供一站式研究入口。<br />
+<sub>高校域名導航 · 奶龍／奶蛙／奶蛋 · PRs Welcome</sub>
+</td>
+</tr>
+<tr>
 <td width="110" align="center">
 <a href="https://github.com/Hej28/Hejs-Pets"><img src="assets/pet-logo.png" width="88" alt="Hej’s Pets 吐舌貓圖標" /></a>
 </td>
