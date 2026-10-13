@@ -25,6 +25,8 @@
   <img alt="Swift" src="https://img.shields.io/badge/Swift-161b22?style=flat-square&amp;logo=swift&amp;logoColor=F05138" />
   <img alt="Python" src="https://img.shields.io/badge/Python-161b22?style=flat-square&amp;logo=python&amp;logoColor=58a6ff" />
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-161b22?style=flat-square&amp;logo=javascript&amp;logoColor=f0db4f" />
+  <img alt="Java" src="https://img.shields.io/badge/Java-161b22?style=flat-square&amp;logo=openjdk&amp;logoColor=ED8B00" />
+  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-161b22?style=flat-square&amp;logo=cplusplus&amp;logoColor=58a6ff" />
   <img alt="GDScript" src="https://img.shields.io/badge/GDScript-161b22?style=flat-square&amp;logo=godotengine&amp;logoColor=478CBF" />
 </p>
 <p>
@@ -32,6 +34,7 @@
   <img alt="Git" src="https://img.shields.io/badge/Git-161b22?style=flat-square&amp;logo=git&amp;logoColor=F05032" />
   <img alt="Godot" src="https://img.shields.io/badge/Godot-161b22?style=flat-square&amp;logo=godotengine&amp;logoColor=478CBF" />
   <img alt="macOS" src="https://img.shields.io/badge/macOS-161b22?style=flat-square&amp;logo=apple&amp;logoColor=ffffff" />
+  <img alt="PC" src="https://img.shields.io/badge/PC-161b22?style=flat-square" />
 </p>
 
 ### Pinned
