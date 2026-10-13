@@ -89,7 +89,7 @@ if data:
  days=[d for week in data['recent']['contributionCalendar']['weeks'] for d in week['contributionDays'] if d['date']>= (NOW-timedelta(days=30)).strftime('%Y-%m-%d') and d['date']<=NOW.strftime('%Y-%m-%d')];peak=max([d['contributionCount'] for d in days]+[1])
  for yy in (90,140,190,225):body+=f'<path d="M30 {yy}H1170" class="line"/>'
  pts=' '.join(f'{30+i*1140/max(1,len(days)-1):.1f},{225-d["contributionCount"]/peak*135:.1f}' for i,d in enumerate(days));body+=f'<polyline points="{pts}" class="curve" fill="none" stroke-width="3"/>'
- for i in range(0,len(days),5):body+=text(30+i*1140/max(1,len(days)-1),253,days[i]['date'][5:],15,'muted')
+ for i in range(0,len(days),5):body+=text(min(1135,30+i*1140/max(1,len(days)-1)),253,days[i]['date'][5:],15,'muted')
 else:body+=text(24,135,'等待首次 GitHub 自動同步',22,'muted')
 save('activity.svg',1200,266,body,'GitHub contributions over the last 31 days')
 # Larger mobile axis labels, identical real data.
