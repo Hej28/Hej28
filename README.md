@@ -2,13 +2,16 @@
   <img src="assets/hej-banner.jpg" width="100%" alt="HEJ — 手心裡的三個青綠色字母鑰匙扣" />
 </p>
 
-<img src="assets/terminal.svg" width="100%" alt="$ whoami: hej or Saelin; $ cat bio.txt" />
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/terminal-mobile.svg" />
+  <img src="assets/terminal.svg" width="100%" alt="$ whoami: hej or Saelin; $ cat bio.txt" />
+</picture>
 
-```text
-低脂國奻｜惡俗醜貨｜疑似鍵政｜破壞分子｜痛苦大學生｜高齡人士
-🇹🇼🇭🇰🇨🇳｜詭異行蹤｜學術失敗者｜健全逼｜落魄合約交易員
-落魄開發者｜經濟困難
-```
+<blockquote>
+<p><samp>低脂國奻｜惡俗醜貨｜疑似鍵政｜破壞分子｜痛苦大學生｜高齡人士<br />
+🇹🇼🇭🇰🇨🇳｜詭異行蹤｜學術失敗者｜健全逼｜落魄合約交易員<br />
+落魄開發者｜經濟困難</samp></p>
+</blockquote>
 
 ### Latest project
 
