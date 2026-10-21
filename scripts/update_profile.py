@@ -36,10 +36,10 @@ if waka:
 # Use the original photographic composition embedded in the existing hero.
 old=(ROOT/'assets/hero.svg').read_text(); start=old.index('data:image/jpeg;base64,'); encoded=old[start+23:].split('"')[0]
 photo=f'data:image/jpeg;base64,{encoded}'
-bio=['低脂國奻｜惡俗醜貨｜疑似鍵政｜破壞分子｜痛苦大學生｜高齡人士','🇹🇼🇭🇰🇨🇳｜詭異行蹤｜學術失敗者｜健全逼｜落魄合約交易員','落魄開發者｜經濟困難']
-mobilebio=['低脂國奻｜惡俗醜貨｜疑似鍵政','破壞分子｜痛苦大學生｜高齡人士','🇹🇼🇭🇰🇨🇳｜詭異行蹤｜學術失敗者','健全逼｜落魄合約交易員','落魄開發者｜經濟困難']
+bio=['低脂國奻｜惡俗醜貨｜疑似鍵政｜破壞分子｜痛苦大學生｜高齡人士','🇹🇼🇭🇰🇨🇳｜詭異行蹤｜學術失敗者｜健全逼｜落魄合約交易員','落魄開發者｜經濟困難｜失敗研發者','搵工中承接各類軟件外包']
+mobilebio=['低脂國奻｜惡俗醜貨｜疑似鍵政','破壞分子｜痛苦大學生｜高齡人士','🇹🇼🇭🇰🇨🇳｜詭異行蹤｜學術失敗者','健全逼｜落魄合約交易員','落魄開發者｜經濟困難｜失敗研發者','搵工中承接各類軟件外包']
 for mobile in (False,True):
- w,h=(600,690) if mobile else (1200,600); imw,imh,x,y=(1000,750,-200,-100) if mobile else (1200,900,0,-160)
+ w,h=(600,690) if mobile else (1200,640); imw,imh,x,y=(1000,750,-200,-100) if mobile else (1200,900,0,-160)
  defs='''<defs><linearGradient id="bottom" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="white"/><stop offset=".35" stop-color="white"/><stop offset=".56" stop-color="white" stop-opacity=".72"/><stop offset=".77" stop-color="white" stop-opacity=".28"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="corner" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="white" stop-opacity="0"/><stop offset=".12" stop-color="white" stop-opacity=".5"/><stop offset=".26" stop-color="white"/></linearGradient><mask id="m1"><rect width="100%" height="100%" fill="url(#bottom)"/></mask><mask id="m2"><rect width="100%" height="100%" fill="url(#corner)"/></mask></defs>'''
  body=defs+f'<g mask="url(#m1)"><image mask="url(#m2)" x="{x}" y="{y}" width="{imw}" height="{imh}" xlink:href="{photo}"/></g>'
  body+=text(28,365,'$ whoami',26,'accent')+text(28,405,'hej or Saelin',30)+text(28,449,'$ cat bio.txt',24,'accent')
