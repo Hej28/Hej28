@@ -1,6 +1,6 @@
 <picture>
   <source media="(max-width: 600px)" srcset="assets/dashboard/hero-mobile.svg" />
-  <img src="assets/dashboard/hero.svg" width="100%" alt="HEJ — hej or Saelin。低脂國奻｜惡俗醜貨｜疑似鍵政｜破壞分子｜痛苦大學生｜高齡人士｜🇹🇼🇭🇰🇨🇳｜詭異行蹤｜學術失敗者｜健全逼｜落魄合約交易員｜落魄開發者｜經濟困難" />
+  <img src="assets/dashboard/hero.svg" width="100%" alt="HEJ — hej or Saelin。低脂國奻｜惡俗醜貨｜疑似鍵政｜破壞分子｜痛苦大學生｜高齡人士｜🇹🇼🇭🇰🇨🇳｜詭異行蹤｜學術失敗者｜健全逼｜落魄合約交易員｜落魄開發者｜經濟困難｜失敗研發者｜搵工中承接各類軟件外包｜" />
 </picture>
 
 <picture>
