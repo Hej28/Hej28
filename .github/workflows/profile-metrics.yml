@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Check WakaTime authentication and status handling
         run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
       - name: Generate transparent profile cards
