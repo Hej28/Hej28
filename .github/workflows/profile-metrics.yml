@@ -16,9 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check WakaTime authentication and status handling
+        run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
       - name: Generate transparent profile cards
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WAKATIME_ACCESS_TOKEN: ${{ secrets.WAKATIME_ACCESS_TOKEN }}
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
         run: python3 scripts/update_profile.py
       - name: Save updated metrics

@@ -2,6 +2,7 @@
 import base64, json, os, math, html, urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from wakatime_stats import load_weekly
 ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'assets/dashboard'; OUT.mkdir(parents=True,exist_ok=True)
 USER='Hej28'; NOW=datetime.now(timezone.utc); token=os.getenv('GH_TOKEN',''); waka=os.getenv('WAKATIME_API_KEY','')
 def api(url,payload=None,headers=None):
@@ -26,13 +27,7 @@ if token:
  result=api('https://api.github.com/graphql',{'query':q,'variables':{'user':USER,'year':f'{NOW.year}-01-01T00:00:00Z','start':(NOW-timedelta(days=30)).strftime('%Y-%m-%dT00:00:00Z')}})
  if result.get('errors'):raise RuntimeError('GitHub statistics query failed: '+str(result['errors']))
  data=result['data']['user']
-weekly=None; waka_status='WakaTime 尚未連接'
-if waka:
- try:
-  wh={'Authorization':'Basic '+base64.b64encode((waka+':').encode()).decode()}
-  weekly=api('https://wakatime.com/api/v1/users/current/stats/last_7_days',headers=wh)['data'];waka_status='最近 7 天 · WakaTime'
- except Exception:
-  waka_status='WakaTime 暫時無法更新';print('WakaTime update unavailable; no credentials logged')
+weekly,waka_status,waka_note=load_weekly(api,os.getenv('WAKATIME_ACCESS_TOKEN',''),waka)
 # Use the original photographic composition embedded in the existing hero.
 old=(ROOT/'assets/hero.svg').read_text(); start=old.index('data:image/jpeg;base64,'); encoded=old[start+23:].split('"')[0]
 photo=f'data:image/jpeg;base64,{encoded}'
@@ -56,8 +51,8 @@ for mobile in (False,True):
   for i,r in enumerate(rows):
    yy=oy+113+i*37; pct=r['percent'];body+=text(ox+24,yy,r['name'],17)+text(ox+164,yy,r['text'],15,'muted')+f'<rect x="{ox+323}" y="{yy-11}" width="{int(pct*1.45)}" height="7" class="accent"/>'+text(ox+500,yy,f'{pct:.1f}%',15,'muted')
  else:
-  msg='啟用後開始累積真實編碼時間' if not weekly else '本週尚無編碼記錄'
-  body+=text(ox+24,oy+142,msg,20)+text(ox+24,oy+181,'不回填歷史時間，不顯示示例數據。',16,'muted')
+  msg='等待 WakaTime 連接' if weekly is None else ('正在計算編碼時間' if weekly.get('is_up_to_date') is False else '本週尚無編碼記錄')
+  body+=text(ox+24,oy+142,msg,20)+text(ox+24,oy+181,waka_note,16,'muted')
  save('overview-mobile.svg' if mobile else 'overview.svg',w,h,body,'Projects and weekly coding time')
 # github-readme-stats ranking algorithm, original MIT attribution in scripts/rank-LICENSE.txt.
 if data:
